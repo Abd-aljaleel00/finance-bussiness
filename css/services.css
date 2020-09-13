@@ -1,0 +1,75 @@
+header > .row {
+    width: 100%;
+}
+header {
+    height: 75vh;
+    background: url("../images/page-heading-bg.jpg") center center;
+    background-size: cover;
+} 
+header .content {
+   
+    display: block;
+    margin: auto;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+header .content h3 {
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+header .content p {
+    text-transform: uppercase;
+    font-size: 17px;
+    width: 100%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+.services {
+    margin-top:120px
+}
+.services .btns  {
+    height: 75px;
+    margin: auto !important;
+    margin-right: 20px !important;
+    margin-bottom: 20px !important;
+    background-color:#FFF;
+    color: var(--main-color);
+    margin-bottom: 17px;
+    line-height: 75px;;
+    font-size: 22px;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #CCC,
+                -1px -1px 5px #CCC;
+    transition: all .35s;
+}
+ @media (max-width:767px) {
+    .services .btns {
+        margin: auto!important;
+        margin-bottom: 15px !important;
+    }
+    .services .row {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.services .btns.active,
+.services .btns:hover {
+    background-color: var(--main-color);
+    color:#FFF;
+    box-shadow: none;
+}
+.services  .box {
+    margin-left: 10%
+}
+.services .box {
+    display: none
+}
+.services .box.active {
+    display: block
+}

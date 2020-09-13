@@ -1,0 +1,180 @@
+/* tips to make a good rtl website with many languges
+
+        1/ add dir="rtl" attribute in the html 
+
+        2/ don't start in arabic design
+
+        3/ padding and margins in parents are better than childs 
+
+       4/ highlight if you want to edit soon  
+
+       ***********
+
+       5/ make direction edit in the same time
+
+       6/ don't ever forget the ordering  of elements in editing file
+
+       7/ use inline-block if you don't need float 
+
+            ************ 
+
+       8/ float right in the rtl file 
+
+       9/ rtl file is for directions only 
+
+       10/ put rt file after the main file in html to make it override on others 
+       
+             *******
+
+       11/ consider word length when translate to arabic : solve this by don't give any width to the work if not needed.
+
+       12/ consider the right nesting :why ? because the more specific nesting will override the other one
+
+       13/ don't use element need to change html like arrows  : use pseduo elements 
+
+       features :=
+
+       1/ bdi 
+
+       2/  dir="auto
+
+        3/  text-align  : stat / end 
+
+        4/ float: inline-start 
+
+        5/ use classes and reverse them in the rtl file  like text-alig / float 
+
+        6/ focus in this properties: margin | padding  | pseudo  elements |border-radius  |  border |
+
+        7/ reset the right / left with /*  auto * / value
+
+        box-shadow : [use negativ values ]
+        transfome  : [use negative valules]
+*/ 
+* {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+header ul  { 
+      text-align: left
+  }
+  header .content{
+      margin-left:0;
+      margin-right:90px;
+  }
+  header ul li {
+ 
+     margin-left: 15px
+  }
+  header i.fa-bars {
+      margin-left: auto;
+      margin-right: 75%
+  }
+  header ol {
+  box-shadow: -1px -1px 10px #333;
+  border: none;
+  border-right:4px solid var(--main-color);
+  }
+  header ol li a.active ,
+  header ol li:hover{
+      padding-right: 25px;
+    
+  }
+  header button {
+    display: initial
+}
+header ol li {
+ text-align: right;
+}
+header i.fa-bars {
+   float: left;
+}
+header span {
+    float: right;
+    text-align: right;
+}
+@media (max-width:625px) {
+    header i.fa-bars {
+            left:10%
+      
+     }
+}
+.about-us .img-box .img-box-caption button {
+    display: block;
+}
+.about-us .img-box h4 {
+  text-align: right;
+} 
+.stat {
+    text-align: right;
+}
+.company, 
+.company h2 {
+    text-align: right !important;
+}
+.shuffle  .row > div:first-child {
+    right: 50%;
+}
+.shuffle  .row > div:nth-child(2) {
+    left: 50%;
+}
+@media (max-width:767px) {
+    
+    .shuffle .row > div:first-child {
+        right: 0;
+    }
+    .shuffle.row > div:nth-child(2) {
+        left: 0
+    }
+}
+
+.shuffle-2  .row > div:first-child {
+    left: 50%;
+}
+.shuffle-2  .row > div:nth-child(2) {
+    right: 50%;
+}
+@media (max-width:767px) {
+    
+    .shuffle-2 .row > div:first-child {
+        left: 0;
+    }
+    .shuffle-2 .row > div:nth-child(2) {
+        right: 0
+    }
+}
+.contact-us {
+    text-align: right;
+}
+ input,
+textarea {
+    text-align: right;
+}
+footer {
+    text-align: right;
+}
+   
+
+footer button {
+    width: 100px;
+    display: block !important;
+    margin-right: auto;
+    margin-left: 20px;
+}
+.our-team ,
+.our-team p {
+    text-align: right;
+}
+
+.services .box {
+    margin-left: 0;
+    margin-right: 10%;
+    text-align: right !important;
+}
+.services h4 ,
+.services p 
+{
+    text-align: right !important;
+}
+.contact-us p  {
+    text-align: center;
+}
